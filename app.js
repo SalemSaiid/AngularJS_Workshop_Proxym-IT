@@ -1,0 +1,1 @@
+var app = angular.module('appProject', ['ngRoute','ui.bootstrap']);

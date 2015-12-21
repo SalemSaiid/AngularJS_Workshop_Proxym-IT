@@ -1,0 +1,53 @@
+#activateCard .add-card{text-align:center}
+
+#myAccount .ngdialog.ngdialog-theme-default.forgot .ngdialog-close:before{content: 'Retour'; font-size: 12px;}
+
+.ngdialog.ngdialog-theme-default.cgv-cgu .ngdialog-content{width:650px}
+
+.ajouterCarte{  margin-top: 40px !important;}
+
+.recievedCard  .block-content{padding-bottom:75px}
+
+input.btnUpdate{cursor:pointer}
+
+#myAccount .repeat{line-height: 1.4;}
+
+#myAccount .btn#reset{  padding: 0 20px;}
+
+.majsolde .boxContent{  padding: 32px 10px;}
+
+#send-pdf-popup input.btn{   min-width: 0; width: 44% !important;}
+
+.showOverlayNav #logo a{position:relative; z-index:99999; background: url("../images/logo_w.png") no-repeat scroll center 21px;   background-size: 115px auto;}
+
+@media only screen and (max-width : 480px) { 
+  .ngdialog.ngdialog-theme-default.custom .ngdialog-content,
+  .ngdialog.ngdialog-theme-default.success-edit-account .ngdialog-content{padding: 50px 20px !important;}
+  
+  /*.ngdialog.ngdialog-theme-default.success-edit-account .ngdialog-content{width: 90%;}*/
+}
+
+@media only screen and (max-width : 640px) { 
+  .ngdialog.ngdialog-theme-default.custom.loginCart{
+    padding-bottom: 0;
+    padding-top: 0;
+    height:100%;
+    width:100%;
+  }
+}
+
+/* Ipad */
+@media only screen and (width : 1024px) {
+	.goNext { bottom: 10px;}
+}	
+
+@media only screen and (min-width : 1025px) and (max-width : 1400px) {  	
+
+#screen3 .frizbeeMobile{background-size: 320px auto;top: 55%;right: 15%;}
+
+}
+
+
+.menu-main ul li{list-style:none; float: left; margin: 0 25px;}
+
+.menu-main ul li a{text-decoration:none;}

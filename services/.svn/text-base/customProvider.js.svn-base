@@ -1,0 +1,52 @@
+'use strict';
+/*
+ * Author Khefacha Mohamed Hedi : khefacha.hedi@gmail.com
+ */
+app.service('customProvider',['$rootScope','$window', '$http', 'appSettings', '$routeParams','$timeout' ,function($rootScope, $window, $http, appSettings, $routeParams, $timeout){
+    
+    var currentId = $routeParams.id;  
+    
+   // Get list category 
+	this.listCategory = function(){
+      return $http.get(appSettings.ApiUrl +'/category/list?api_key='+appSettings.ApiKey).then(function (results) {
+          $rootScope.categories = results.data.result;
+          console.log($rootScope.categories);
+      });
+    };
+    
+    // Get list themes
+    this.listTheme = function(){
+      return $http.get(appSettings.ApiUrl +'/theme/list?api_key='+appSettings.ApiKey).then(function (results) {
+        $rootScope.themes = results.data.result;
+      });
+    };
+    
+    // Get list product
+    this.listProduct = function(){
+      return $http.get(appSettings.ApiUrl +'/signboard/list?api_key='+appSettings.ApiKey).then(function (results) {
+        $rootScope.signs = results.data.result;
+
+     });
+    };
+
+	// Get cart informtions by ID
+	this.signsInfo = function(){
+
+	    //usSpinnerService.spin('loading');
+	    return $http.get(appSettings.ApiUrl +'/signboard/show/'+$rootScope.idRoute+'?api_key='+appSettings.ApiKey).then(function (results) {
+	             $rootScope.infosCart = results.data.result;
+	             $rootScope.name = results.data.result.name;
+	             $rootScope.visualCart = results.data.result.visualCard;
+	             $rootScope.logo = results.data.result.logo;
+	             $rootScope.cgv = results.data.result.cgv;
+	             $rootScope.validationDate = results.data.result.validationDate;
+	             $rootScope.offreAmount1 = results.data.result.offreAmount1;
+	             $rootScope.offreAmount2 = results.data.result.offreAmount2;
+	             $rootScope.offreAmount3 = results.data.result.offreAmount3;
+	             $rootScope.offreAmountFree = results.data.result.offreAmountFree;
+	             $rootScope.min = results.data.result.offreAmountFreeMin;
+	             $rootScope.max = results.data.result.offreAmountFreeMax;
+	    });
+	};
+
+}]);

@@ -1,0 +1,21 @@
+<div class="all-container">
+	<!-- Top -->	
+	<div class="contentTop">
+		<h1>{{name}}</h1>
+	</div>
+	<!-- /Top -->					
+
+	<div>
+				
+		<div class="carte">
+			<img ng-src="{{visualCart}}"/>
+		</div>
+		
+		<div><label>Prix 1:</label> <b>{{offreAmount1}}</b></div><br/>
+		
+		<div><label>Prix 2:</label> <b>{{offreAmount2}}</b></div><br/>
+		
+		<div><label>CGV:</label> <div class="cgv">{{cgv}}</div></div>
+				
+	</div>
+</div>

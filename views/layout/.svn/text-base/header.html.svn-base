@@ -1,0 +1,18 @@
+<header>
+   <div id="logo"><a href="#">Frizbee</a></div>
+   <div id="proxym" class="proxym"><a href="#">Frizbee</a></div>
+   <div class="title" style="text-align: center;font-size: 20px;font-weight: bold;padding-top: 25px;color:#5873b1;">AngularJs + Web Service REST</div>
+   <div class="menu-main">
+       <ul class="">
+            <li class="hidden">
+                <a class="page-scroll" href="#"></a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#!/accueil">Produits</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#!/inscription">Inscription</a>
+            </li>
+       </ul>
+   </div>
+</header>

@@ -1,0 +1,206 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* TABLET LANDSCAPE */ /* and (max-device-width : 980px) */ /* and (orientation : landscape) */
+@media only screen and (max-width : 1024px) { 
+	.showInTablet{display: block;}
+	#logo { margin-left: 16px; }
+	header nav {margin: 0 80px 0 136px;}
+	#mainMenu > li a {font-size: 13px; padding: 0 6px;}
+	.userAccount{text-indent: -9999px;width: 0px;overflow: hidden;}
+	.borderContainer {border: none;}
+	.leftBorder, .rightBorder{border: none; margin: 0;} 
+
+	/* HOME */
+	.homeCell{ padding: 0 14px; margin-bottom: 28px;}
+	.homeCell h3{font-size: 16px;margin-bottom: 6px;}
+	.cellHomeContent{font-size: 13px; line-height: 18px;}
+	.cellHomeContent p{margin-bottom: 4px;}
+
+	.homeLogo{background-size: 90px auto ; padding-top: 90px; max-width: 240px; margin: 0 auto 40px;}
+	.homeLogo .slogan{background-size: 225px auto; height: 80px;}
+
+	#screen2 h2{font-size: 38px; margin-bottom:46px;}
+	#screen2 .bottomCentent{font-size: 16px; }
+
+	#screen3 h2 {  font-size: 36px; margin-bottom: 16px; line-height: 48px;}
+	#screen3 .screenContent {width: 432px;}
+	#screen3 .frizbeeMobile{ background-size: 216px auto;height: 400px;margin-top: -178px;right: 10%;width: 220px;}
+	#screen3 .frizbeeApps { margin-left: -350px;}
+
+	.filtre { margin-top: 30px; }
+
+	.overviewBox {max-width: 320px;}
+	.overview .logo img { max-width: 90px;}
+	.overview .somme { border-width: 2px 0; font-size: 30px; line-height: 40px; }
+	.overview .date-block span { font-size: 17px;}
+	.overview .date-block .inner-enseigne { font-size: 13px;  }
+	.overview .date-block .date { font-size: 13px; }
+}
+
+
+/* TABLET PORTRAIT portrait  */ /* and (max-device-width : 768px) */ /* and (orientation : portrait) */
+@media only screen and (max-width : 768px) and (orientation : portrait) , screen and (max-width : 640px) {
+
+	body{font-size: 12px; line-height: 18px;}
+	h1 {font-size: 16px;line-height: 22px; margin-bottom: 4px;}
+	h2 {font-size: 15px;line-height: 26px; margin-bottom: 2px;}
+	h3{margin-bottom: 12px;}
+	h4{font-size: 14px; margin-bottom: 4px;}
+
+    .desktop{display:none;}
+    .mobile{display:block;}
+    .blobkMobile{display: block;}
+
+    .ring{ font-size: 17px;}
+	.ring:before{border:5px solid #a5b3d1; width: 64px; height: 64px; margin: 0 auto 8px;}
+	.ring.small:before{width: 44px; height: 44px; }
+	.ring.white:hover:before{box-shadow: 0 0 0 3px #8b96ad; }
+
+	.ring.add:before{ background-size: 28px auto; }
+	.ring.edit:before{ background-size: 29px auto; }
+	.ring.delete:before{ background-size: 29px auto; }
+	.ring.search:before{ background-size: 26px auto; }
+	.ring.valid:before{ background-size: 32px  auto; }
+	.ring.certif:before{ background-size: 36px auto; }
+	.ring.download:before{ background-size: 13px auto; }
+	.ring.send:before{; background-size: 24px auto; }
+	.ring.localiser:before{ background-size: 22px auto; }
+	.ring.globe:before{ background-size: 34px auto; }
+
+    .logoutBox{top:20px; right: 12px;}
+    .logoutBox .logout{ background: url("../images/icons/icon-deconnect.png") no-repeat scroll left center / 22px auto rgba(0, 0, 0, 0); display: inline-block;line-height: 26px;padding-left: 30px;text-indent: -9999px;}
+
+    .showOverlayNav{ overflow: hidden!important; }
+    header{height: 65px;}
+	header nav {display: none; position: fixed; top:0; left:0; bottom:0; right: 0; z-index: 99990; margin: 0; background-color:#171c28; }
+	.showOverlayNav header nav{display: block; overflow-y: auto;}
+	header nav #mainMenu{background: url("../images/logo_w.png") no-repeat scroll center 21px; background-size: 115px auto; padding-top: 80px;}
+	header nav #mainMenu > li{float: none; display: block;}
+	header nav #mainMenu > li > a{color: #FFF; font-size: 14px;}
+
+	#wrap { margin: 0 auto -30px; }
+	footer, #push{height: 30px;} .footerBar{line-height: 30px; font-size: 10px;}
+
+	.filtre { margin-top: 20px; }
+
+	.deleteIcon{font-size: 17px; line-height: 46px; color: #FFF; background-color: #fd7a7a; /* rgba(23, 28, 40, 0.8) */  width: 100%;  }
+	.deleteIcon:before{ display: none; }
+
+	.iconSandwich{}
+	#logo {float: none; margin-left: auto; margin-right: auto; }
+	#logo > a { height: 65px; }
+	#userBox {padding: 13px 6px;}
+
+	.grid > [class^=cell], .tableGrid > [class^=cell]{float: none!important; width: auto; display: block;}
+	.accountEditBtns > [class^=cell]{ width:50%; }
+
+	.homeLogo{background-size: 60px auto ; padding-top: 60px; max-width: 160px; margin: 0 auto 30px;}
+	.homeLogo .slogan{background-size: 150px auto; height: 54px;}
+	.mainLink{line-height: 46px;font-size: 13px; border: 2px solid #fff; margin: 8px 0; }
+
+	.showInMobile{display: block;}
+	
+	#content { margin-top: 0px;}
+	.contentTop{padding: 12px 15px 8px;}
+	.containerTop{padding: 0 0px 52px;}
+	.boxContent {padding:20px 24px;}
+	.borderContainer {margin-bottom: 20px;}
+	.hbox{ height: auto; padding:8px 0;  }
+	
+	.logout.desktop a{background:url(../images/icons/icon-deconnect.png) no-repeat center right / 30px; font-size:0px; width:100px;   display: block; }
+	a.logout.mobile{background:url(../images/icons/icon-deconnect.png) no-repeat center right / 23px; font-size:0px; width:40px; display: inline-block; margin-left: 14px; float: left; }
+
+	/* HOME */
+	#homePage .section{/*border-top: 65px solid #f0f2f5;*/}
+	#homePage .section.last{border-bottom: 30px solid #f0f2f5;}
+	#homeScreens { padding-top: 65px;}
+	.homeCells {margin-bottom: 24px;}
+	.homeCell{width: 50%;}
+
+	.flashInfo{font-size: 11px; line-height: 16px; padding: 2px 0 3px;}
+	.closeFlashInfo { bottom: 3px; height: 15px; left: 3px; width: 15px;}
+
+	#screen2 h2{font-size: 32px;}
+	#screen2 .bottomCentent{font-size: 14px; line-height: 22px;}
+	.homeCell{width: 50%; padding: 0 15px; margin-bottom: 16px;}
+	.homeCell h3{font-size: 13px;margin-bottom: 2px;}
+	.homeCell h3:before{ background-size: auto 46px;  height: 46px; width: 160px;margin: 0 auto 4px; }
+	.homeCell h3.send:before{background-position: 0 1px;width: 60px;}
+	.homeCell h3.select:before{background-position: -61px 5px; width: 74px;}
+	.homeCell h3.custom:before{background-position: -137px 2px;width: 71px; -webkit-transform: translate(6px, 0px); -moz-transform:translate(6px, 0px); -ms-transform: translate(6px, 0px); -o-transform: translate(6px, 0px); transform: translate(6px, 0px);}
+	.homeCell h3.find:before{background-position: -210px 1px; width: 46px;}
+
+	.cellHomeContent { font-size: 11px; line-height: 18px;}
+	.clearInHome{clear: both;}
+
+	.homeScreenHeight{}
+	#screen1 .homeScreenHeight{min-height: 276px;}
+	#screen2 .homeScreenHeight{min-height: 464px;}
+	#screen3 .homeScreenHeight{min-height: 560px;}
+
+	.goNext {font-size: 14px; padding-bottom: 2px;}
+	.goNext::after, .goNext.dark::after { background-size: 30px auto; width: 30px;height: 30px; margin: 2px auto 0;}
+	.screen, .screen.centered{ margin:76px 18px 70px;}
+	.screen.last{margin-bottom: -30px;}
+
+	.screenBg{height: 45%;}
+
+	#screen3 .screenContent{width: auto; /* font-size: 17px;*/}
+	#screen3 h2 { font-size: 20px;line-height: 30px; margin-bottom: 12px;}
+	#screen3 .screenContent p{font-size: 14px;line-height: 22px;}
+	#screen3 .frizbeeMobile{background-size: 190px auto; height: 354px; margin: 18px 49px 18px 0; position: relative; right: auto; top: auto; width: auto;}
+	#screen3 .frizbeeApps{bottom: auto; left: auto; margin: 0 auto; position: relative; width: 232px;}
+	#screen3 .frizbeeApps li a {width: 112px;height: 32px;}
+
+	.contactForm{margin-top: 12px;}
+
+	.viewList.collapseList{margin: 18px -24px;}
+	.viewList.collapseList li.collapse{margin: 0px;}
+	.viewList.collapseList li h4 > a{background: none;}
+	.viewList.collapseList li.collapse h4 { background: url("../images/icons/puce-cgv-on.png") no-repeat scroll 21px center #fff; background-size: 9px auto;}
+	.viewList.collapseList li.collapse h4 > a{background: url("../images/icons/close3.png") no-repeat right center #fff;}
+
+	#content .oupsContainer{background-size: 130px auto; padding-top: 160px; font-size: 12px; line-height: 26px;  }
+	#content .oupsContainer h2{font-size: 14px;  margin-bottom: 14px;}
+
+
+	.overviewBox{ max-width: 290px; }
+	.overview { min-height: 76px; border: 2px solid #5873b1; }
+	.overview .logo img { max-width: 80px; }
+	.overview .somme {border-width: 1px 0; font-size: 30px; line-height: 38px;}
+	.overview .date-block span { font-size: 15px;}
+	.overview .date-block .inner-enseigne { font-size: 12px;  }
+	.overview .date-block .date { font-size: 12px; }
+	.sig { font-size: 10px; }
+
+	.inputLine .btn, .promotionCell .btn{line-height: 33px; min-height: 33px;}
+
+	.inputLine.addCarte .inputCell{ margin-right: 0px; }
+	.inputLine.addCarte .btnCell{   width: 100%;position: static;margin-top: 6px; }
+
+	.rappel { font-size: 10px; line-height: 25px; }
+	.rappel:before {margin: 0 5px -2px 0;}
+
+	.carteImg, .carteLinks{ float: none; width: auto; margin-bottom: 28px; }
+	.carteLinks.clearfix { max-width: 360px; margin-right: auto; margin-left: auto; }
+
+	.carteBadge{ margin: 0; }
+
+	.carteLinks .ring.small { font-size: 13px; float: left; width: 50%;}
+
+	.share-link {float: left; width: 50%;}
+
+	.overview.detailsHeight {min-height: 76px;}
+
+	#map {height:320px;}
+	
+	#myAccount .repeat{line-height: 32px !important;}
+
+}
+
+/* MOBILE */ 
+@media only screen and (max-width : 640px) {
+    #map {height:260px;}
+} 
+ 

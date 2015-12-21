@@ -1,0 +1,46 @@
+<!-- Filter -->
+<div class="formField">
+	<div class="formControlSelect">
+		<select class="select-theme" name="theme" ng-model="theme" ng-options="item.message as item.theme for item in themes">
+			<option value="">Sélectionnez un thème prédéfini (facultatif)</option>
+		</select>
+	</div>
+	<div class="formControl">
+		<textarea class="defaultTheme"name="themeContent" maxlength="500" placeholder="Votre message (facultatif, 500 caractères max)" >{{theme}}</textarea>
+	</div>
+</div>
+<!-- / Filter -->
+
+<!-- Filter by category  -->
+<div class="formField left">
+	<!-- Liste des categories -->
+	<select class="select-cat full" name="cat" ng-model="selectedGroupToShow.Id"  ng-options="category.id as category.name for category in categories">
+    	<option value="">Filtrer par catégorie</option>
+    </select>
+</div>
+<!-- / Filter by category  -->
+
+<!-- List category -->
+<div class="whiteContainer">
+	<div class="boxContent smallPadding">
+		<div class="grid signs">
+		    <!-- Bloc enseigne -->
+		    <div class="elem" ng-repeat= "item in signs | filter:filterByName | filter:{category_id:selectedGroupToShow.Id || undefined}" >
+				<a href="#!/{{item.id}}/details" ng-click="clearSearch()">
+					<span class="imgElem" >
+						<div class="table-cell">	
+						  <img ng-src="{{item.logo}}" alt="{{item.name}}" class="grayscaleGray grayscale"/>
+						</div>
+					</span>	
+				</a>
+			</div>	
+ 
+			<!-- Filter by category is empty --> 
+			<!--<div ng-if="(signs | filter:filterByName).length==0">Il n'a pas des enseignes dans cette catégorie</div>-->
+			
+			<!-- Filter by name is empty --> 
+			<!--<div ng-if="(signs | filter:{category_id:selectedGroupToShow.Id || undefined}).length==0">Il n'a pas des enseignes dans cette catégorie</div>-->
+		</div>
+	</div>
+</div>
+<!-- / List category -->

@@ -1,0 +1,40 @@
+<!-- title -->
+<div class="contentTop">
+	<h1><span class="regular">Créer</span> un compte</h1>
+</div>
+<!-- !title -->
+
+<!-- content -->
+<div class="borderContainer">
+  <form  ng-submit="createAccount()" class="smallCenteredBox boxContent" novalidate>
+		<h3 class="sectionTitle addAccountIcon">Créer un compte</h3>
+
+		<div class="borderless absoluteMsg">
+			<div class="formField">
+				<div class="formControl">
+					<input type="text" name="firstname" id="firstname" class="{{classFristname}}"  placeholder="Prénom*" ng-model="firstname" />
+				</div>
+			</div>
+			<div class="formField">
+				<div class="formControl">
+					<input type="email" name="email" id="email" class="{{classEmail}}"  placeholder="Email*" ng-model="email"  />
+				</div>
+			</div>
+			<div class="formField">
+				<div class="formControl">
+					<input type="password" name="password" id="password" class="{{classPassword}}" placeholder="Mot de passe*" ng-model="password"/>
+				</div>
+			</div>
+			<div class="formField">
+				<div class="formControl">
+					<input type="password" name="confirm" id="confirm" class="{{classConfirm}}" value="" placeholder="Confirmer votre mot de passe*" ng-model="confirmPassword" / >
+				</div>
+			</div>
+			<div class="formField defaultColor alignRight"><em>* Champs obligatoires</em></div>
+			<div class="actionsRow alignRight">
+				<input type="submit" name="submit" id="submit" class="btn" value="Créer votre compte" />
+			</div>
+		</div>
+	</form>
+</div>
+<!-- !content -->

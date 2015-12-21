@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="appProject">
+<head>
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <!-- Angular  -->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="routing.js"></script>
+    <script src="config.js"></script>
+    <script src="constants.js"></script>
+
+
+    <script src="src/controllers/homeController.js"></script>
+
+    <script src="src/services/customProvider.js"></script>
+    <script src="src/services/userProvider.js"></script>
+
+
+    <!--<script src="data.js"></script>
+    <script src="services/math.js"></script>
+    <script src="controllers/indexController.js"></script>
+    <script src="filters/filter.js"></script>-->
+
+    <!-- CSS -->
+    <link href="assets/css/layout.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+  <div id="wrap">
+	<div id="container">
+	 <!-- HEADER -->
+	    <div ng-include="'views/layout/header.html'"></div>
+	 <!-- !HEADER -->
+	 
+	 <!-- CONTENT -->
+	 <div id="content" class="centered">
+		<div class="borderContainer tableGrid">
+	    	<div class="cell7 rightBorder">
+		    	<div class="boxContent widePadding" ng-view>
+		    		
+                    
+                   
+                </div>
+            </div>   
+        </div>
+     </div> 
+     <!-- FOOTER -->
+	    <div ng-include="'views/layout/footer.html'"></div>
+	 <!-- !FOOTER -->
+     </div>
+   </div>  
+  </body>
+</html>
